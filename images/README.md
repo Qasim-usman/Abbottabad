@@ -5,6 +5,29 @@ photographs, drop a file into this folder with the exact name below — no HTML 
 changes are needed. Delete the `<span class="frame__tag">…</span>` next to an image
 once the real file is in place, so the filename hint stops showing.
 
+## Already in place
+
+These are real files, already wired into the pages — the rows further down are still
+flat SVG placeholders.
+
+| File | Used on | Ratio |
+| --- | --- | --- |
+| `og-cover.png` | all pages (social sharing) | 1200×630 — generated placeholder, swap for a photograph when you have one |
+| `hero-abbottabad-valley.jpg` | index.html hero | 4:3 |
+| `chapli-kabab.jpg` | food.html | 4:3 |
+| `g-chapli-griddle.jpg` | gallery.html | 1:1 |
+| `pink-chai.jpg` | food.html | 4:3 |
+| `stone-church.jpg` | places.html + gallery.html | 4:3 |
+| `g-old-street.jpg` | gallery.html | 1:1 |
+
+Full-resolution originals live in `originals/`, which is git-ignored — they are 3–5 MB
+each and must never ship. Re-crop from there rather than from the shipped JPEGs.
+
+Two photographs from that batch were **not** used: a stone village under snow-capped
+limestone peaks and a river valley of alpine pasture and chalets. Both are clearly
+European, not the Hazara valley, and captioning them as Abbottabad would make the page
+factually wrong.
+
 ## Rules
 
 - **Never hotlink** images from other sites. Use your own photographs, ones you have

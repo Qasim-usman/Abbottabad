@@ -9,3 +9,7 @@ desktop.ini
 .vercel/
 node_modules/
 *.tmp.js
+
+# Full-resolution photo sources: 3-5 MB each, re-cropped locally, never shipped
+images/originals/
+*.jfif
