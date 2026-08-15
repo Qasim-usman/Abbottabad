@@ -53,6 +53,7 @@ Eight pages, sharing one header, footer and design system:
 ├── favicon.svg
 ├── robots.txt
 ├── sitemap.xml
+├── vercel.json          ← cache + security headers only; no build config
 ├── css/
 │   └── style.css         ← 1. reset  2. tokens  3. base  4. layout
 │                           5. components  6. animations  7. page overrides  8. utilities
@@ -215,6 +216,26 @@ With JavaScript off, `:root:not(.js)` rules show everything from the start.
 The site is live on Vercel at **<https://abbottabad.vercel.app/>**, served from
 <https://github.com/Qasim-usman/Abbottabad>. There is no build step, so every push to
 `main` redeploys the folder as-is — nothing to configure and nothing to compile.
+
+### Caching — bump `?v=` when you edit CSS or JS
+
+`vercel.json` is the only config file, and it only sets response headers. Vercel's
+default revalidates every asset on every visit; the rules there instead cache `css/`
+and `js/` for a year as `immutable`, `images/` for a day with a week of
+`stale-while-revalidate`, and leave HTML on the default so copy edits go live the
+moment a deploy finishes. It also sets four ordinary security headers (`nosniff`,
+`Referrer-Policy`, `X-Frame-Options`, `Permissions-Policy`).
+
+A year of `immutable` is only safe because the pages ask for the assets by version —
+`css/style.css?v=1` and `js/main.js?v=1`. **After editing either file, bump that number
+in all eight pages**, or returning visitors keep the stale copy:
+
+```bash
+grep -rl '?v=1' *.html | xargs sed -i 's/?v=1/?v=2/g'
+```
+
+Photographs are exempt on purpose: they get replaced under the same filename, so a
+one-year cache would strand the old picture in browsers that had already seen it.
 
 ### Vercel, from scratch
 
