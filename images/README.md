@@ -19,14 +19,53 @@ flat SVG placeholders.
 | `pink-chai.jpg` | food.html | 4:3 |
 | `stone-church.jpg` | places.html + gallery.html | 4:3 |
 | `g-old-street.jpg` | gallery.html | 1:1 |
+| `thandiani.jpg` | places.html | 4:3 |
+| `nathiagali.jpg` | places.html | 4:3 |
+| `pipeline-track.jpg` | places.html | 4:3 |
+| `ayubia.jpg` | places.html | 4:3 |
 
 Full-resolution originals live in `originals/`, which is git-ignored — they are 3–5 MB
 each and must never ship. Re-crop from there rather than from the shipped JPEGs.
+
+### Licensing of the four Pexels photographs
+
+`thandiani.jpg`, `nathiagali.jpg`, `pipeline-track.jpg` and `ayubia.jpg` come from
+Pexels, whose licence permits use on a site like this. Attribution is not required, so
+it is recorded here rather than in the page markup:
+
+| File | Photographer | Source |
+| --- | --- | --- |
+| `thandiani.jpg` | Beigh Yabaar | <https://www.pexels.com/photo/32584966/> |
+| `nathiagali.jpg` | Rubaitul Azad | <https://www.pexels.com/photo/15875948/> |
+| `pipeline-track.jpg` | salman kazmi | <https://www.pexels.com/photo/11621378/> |
+| `ayubia.jpg` | Iqbal farooz | <https://www.pexels.com/photo/15625058/> |
+
+**Pexels lists no location for any of the four.** Each is a northern-subcontinent pine
+forest scene that suits the card it sits on, but none is confirmed to be the place
+named in the heading, so the `alt` text describes only what is visible in the frame and
+never asserts the location. Swap any of them for a photograph you can place yourself.
 
 Two photographs from that batch were **not** used: a stone village under snow-capped
 limestone peaks and a river valley of alpine pasture and chalets. Both are clearly
 European, not the Hazara valley, and captioning them as Abbottabad would make the page
 factually wrong.
+
+### Seven slots still open, and why some links can't fill them
+
+`harnoi`, `ilyasi-masjid`, `sajikot-waterfall`, `sarban-hills`, `lady-garden`,
+`jalal-baba-auditorium` and `karakoram-highway` were each offered as a link to an image
+on another site — five Google Images thumbnails, one Pinterest upload and one Google
+Places photo. None was used, on two counts:
+
+- **Too small.** They measure 347×576, 500×375, 736×981, 387×516, 387×516, 547×365 and
+  399×501. These frames render about 620 CSS px wide and want ~1240 px to stay sharp,
+  and most of those files are portrait, so a 4:3 crop halves them again.
+- **Not ours to publish.** They are other people's photographs. Copying them here would
+  put the infringing copy on this domain, which is worse than hotlinking, not better.
+
+Pexels and Wikimedia Commons both carry licence-clear photographs of the Galiyat, and
+Commons has some of Abbottabad itself. Those are the places to look for the remaining
+seven.
 
 ## Rules
 
