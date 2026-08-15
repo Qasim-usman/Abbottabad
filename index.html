@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abbottabad — The City of Pines | Hazara, Khyber Pakhtunkhwa</title>
+<meta name="description" content="A guide to Abbottabad, Pakistan: the City of Pines in the Hazara valley. Founded in 1853, ringed by hill stations, and two hours from Islamabad. Places, food, history and travel tips.">
+<link rel="canonical" href="https://your-username.github.io/abbottabad/index.html">
+<meta name="theme-color" content="#FFFDF7">
+<meta name="color-scheme" content="light dark">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Abbottabad — The City of Pines">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Abbottabad — The City of Pines">
+<meta property="og:description" content="Pine ridges, hill-station air and Hazara hospitality. A complete guide to Abbottabad, Pakistan.">
+<meta property="og:url" content="https://your-username.github.io/abbottabad/index.html">
+<meta property="og:image" content="https://your-username.github.io/abbottabad/images/og-cover.jpg">
+<meta property="og:image:alt" content="Pine-covered hills above Abbottabad at golden hour.">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abbottabad — The City of Pines">
+<meta name="twitter:description" content="Pine ridges, hill-station air and Hazara hospitality. A complete guide to Abbottabad, Pakistan.">
+<meta name="twitter:image" content="https://your-username.github.io/abbottabad/images/og-cover.jpg">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Runs before first paint: flags JS and applies the saved / system theme
+     so the page never flashes the wrong colours. -->
+<script>
+(function () {
+  var h = document.documentElement;
+  h.classList.add('js');
+  var t = null;
+  try { t = localStorage.getItem('ab-theme'); } catch (e) {}
+  if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  h.setAttribute('data-theme', t);
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristDestination",
+  "name": "Abbottabad",
+  "alternateName": "The City of Pines",
+  "description": "Abbottabad is a hill city in the Hazara region of Khyber Pakhtunkhwa, Pakistan, founded in 1853 and surrounded by pine-covered ridges and hill stations.",
+  "url": "https://your-username.github.io/abbottabad/",
+  "image": "https://your-username.github.io/abbottabad/images/og-cover.jpg",
+  "touristType": ["Nature lovers", "Families", "Hikers", "Food travellers"],
+  "geo": { "@type": "GeoCoordinates", "latitude": 34.1463, "longitude": 73.2117 },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Abbottabad",
+    "addressRegion": "Khyber Pakhtunkhwa",
+    "addressCountry": "PK"
+  },
+  "containedInPlace": { "@type": "AdministrativeArea", "name": "Hazara Division" }
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+<header class="nav">
+  <div class="nav__inner shell">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">AB</span>
+      <span class="brand__txt">Abbottabad<small>City of Pines</small></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Main">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="nav__link" href="history.html">History</a></li>
+        <li><a class="nav__link" href="places.html">Places</a></li>
+        <li><a class="nav__link" href="food.html">Food</a></li>
+        <li><a class="nav__link" href="culture.html">Culture</a></li>
+        <li><a class="nav__link" href="visit.html">Visit</a></li>
+        <li><a class="nav__link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__tools">
+      <button class="icon-btn" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13.2A9 9 0 1 1 10.8 3a7 7 0 0 0 10.2 10.2Z"/></svg>
+      </button>
+      <button class="icon-btn nav__burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<aside class="drawer" id="drawer" aria-label="Site menu" hidden>
+  <div class="drawer__head">
+    <span class="drawer__title">Menu</span>
+    <button class="icon-btn" id="drawerClose" type="button" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+    </button>
+  </div>
+  <ul class="drawer__list" id="drawerList"></ul>
+  <p class="drawer__foot small">Hazara Division · Khyber Pakhtunkhwa · Pakistan</p>
+</aside>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" data-split-root>
+    <div class="hero__bg pattern-dots" data-parallax="0.18" aria-hidden="true"></div>
+    <span class="hero__shape hero__shape--1" data-parallax="-0.22" aria-hidden="true"></span>
+    <span class="hero__shape hero__shape--2" data-parallax="0.26" aria-hidden="true"></span>
+    <span class="hero__shape hero__shape--3" data-parallax="-0.15" aria-hidden="true"></span>
+
+    <div class="shell hero__inner">
+      <div class="hero__grid">
+        <div>
+          <p class="eyebrow">Hazara · Khyber Pakhtunkhwa · Pakistan</p>
+
+          <h1 class="hero__title">
+            <span class="sr-only">Abbottabad</span>
+            <span class="hero__stack" aria-hidden="true">
+              <span class="hero__block"><span class="mask"><span class="mask__i">Abbott</span></span></span>
+              <span class="hero__block hero__block--2"><span class="mask"><span class="mask__i" style="--md:130ms">abad</span></span></span>
+            </span>
+          </h1>
+
+          <p class="hero__sub" data-split data-split-step="70">The City of Pines</p>
+          <p class="hero__lede">Cool air, deodar and chir pine on every ridge, a bazaar that smells of
+            cardamom and roasting corn, and hill stations less than an hour away. This is my hometown.</p>
+
+          <div class="cluster hero__cta">
+            <a class="btn btn--pine btn--lg" href="places.html">See the places</a>
+            <a class="btn btn--lg" href="visit.html">How to get here</a>
+          </div>
+        </div>
+
+        <div data-reveal="scale" data-reveal-delay="200">
+          <figure class="frame frame--4x3">
+            <img src="images/ph-pine.svg" alt="Pine-covered ridges rising behind the rooftops of Abbottabad in the late afternoon."
+                 width="1200" height="900" loading="eager" decoding="async">
+            <span class="frame__tag">images/hero-pines.jpg</span>
+          </figure>
+          <p class="cluster mt-3">
+            <span class="sticker">Since 1853</span>
+            <span class="badge u-sky">≈1,260 m above sea level</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee" aria-label="Abbottabad highlights ticker">
+    <div class="marquee__track">
+      <span class="marquee__item">Pine City ✳</span>
+      <span class="marquee__item">Hazara ✳</span>
+      <span class="marquee__item">Since 1853 ✳</span>
+      <span class="marquee__item">Thandiani ✳</span>
+      <span class="marquee__item">Chapli Kabab ✳</span>
+      <span class="marquee__item">Shimla Hill ✳</span>
+    </div>
+  </div>
+
+  <!-- ================= STAT TILES ================= -->
+  <section class="section section--tight" aria-labelledby="facts-h">
+    <div class="shell">
+      <h2 class="sr-only" id="facts-h">Abbottabad at a glance</h2>
+      <div class="grid grid--4" data-stagger="70">
+        <div class="stat u-mustard" data-reveal="up">
+          <span class="stat__num" data-count="1853" data-count-group="off">1853</span>
+          <span class="stat__label">Founded</span>
+          <span class="stat__note">January 1853, by Major James Abbott</span>
+        </div>
+        <div class="stat u-pine" data-reveal="up">
+          <span class="stat__num" data-count="1260" data-count-suffix=" m">1,260 m</span>
+          <span class="stat__label">Elevation, roughly</span>
+          <span class="stat__note">Cool summers, crisp winters</span>
+        </div>
+
+        <div class="stat u-sky" data-reveal="up">
+          <span class="stat__num">KPK</span>
+          <span class="stat__label">Province</span>
+          <span class="stat__note">Khyber Pakhtunkhwa, northern Pakistan</span>
+        </div>
+        <div class="stat u-lilac" data-reveal="up">
+          <span class="stat__num">Hazara</span>
+          <span class="stat__label">Region &amp; division</span>
+          <span class="stat__note">Home of the Hazarewal, and of Hindko</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STICKY HORIZONTAL "TOP PLACES" STRIP ================= -->
+  <section class="section section--band" aria-labelledby="top-h">
+    <div class="shell">
+      <div class="sec-head">
+        <div class="sec-head__text">
+          <p class="eyebrow">Scroll-driven strip</p>
+          <h2 id="top-h">Top places, side to side</h2>
+          <p>Six of the places people actually take you when you visit. The strip pans as you
+            scroll on a desktop; on a phone just swipe it.</p>
+        </div>
+        <p class="hstrip__hint" aria-hidden="true">Keep scrolling
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12h14M13 6l6 6-6 6"/></svg>
+        </p>
+      </div>
+    </div>
+
+    <div class="hstrip" data-hstrip>
+      <div class="hstrip__pin" data-native-scroll tabindex="0" role="group" aria-label="Top places, horizontal list">
+        <ul class="hstrip__track">
+          <li class="hstrip__card card card--flush u-pine">
+            <div class="frame frame--4x3">
+              <img src="images/ph-pine.svg" alt="Deodar pines framing the viewpoint at Shimla Hill." width="800" height="600" loading="lazy" decoding="async">
+              <span class="frame__tag">images/shimla-hill.jpg</span>
+            </div>
+            <div class="card__body">
+              <span class="badge u-pine">Nature</span>
+              <h3>Shimla Hill</h3>
+              <p>The city's balcony. Ten minutes uphill from the bazaar for roasted corn, a
+                sunset and the whole valley laid out below.</p>
+            </div>
+          </li>
+
+          <li class="hstrip__card card card--flush u-sky">
+            <div class="frame frame--4x3">
+              <img src="images/ph-sky.svg" alt="Mist drifting through tall pines on the road to Thandiani." width="800" height="600" loading="lazy" decoding="async">
+              <span class="frame__tag">images/thandiani.jpg</span>
+            </div>
+            <div class="card__body">
+              <span class="badge u-sky">Nature</span>
+              <h3>Thandiani</h3>
+              <p>Literally "very cold". A winding drive east of the city to about 2,700 m, where
+                the forest opens onto ridge after ridge of blue hills.</p>
+            </div>
+          </li>
+
+          <li class="hstrip__card card card--flush u-mustard">
+            <div class="frame frame--4x3">
+              <img src="images/ph-mustard.svg" alt="The white minarets of Ilyasi Masjid above its spring-fed pool." width="800" height="600" loading="lazy" decoding="async">
+              <span class="frame__tag">images/ilyasi-masjid.jpg</span>
+            </div>
+            <div class="card__body">
+              <span class="badge u-mustard">Religious</span>
+              <h3>Ilyasi Masjid</h3>
+              <p>Nawan Shehr's landmark mosque, built over a natural spring, with cold water
+                running under the courtyard and pakora stalls at the gate.</p>
+            </div>
+          </li>
+
+          <li class="hstrip__card card card--flush u-tomato">
+            <div class="frame frame--4x3">
+              <img src="images/ph-tomato.svg" alt="Water falling into a rocky pool at Sajikot Waterfall." width="800" height="600" loading="lazy" decoding="async">
+              <span class="frame__tag">images/sajikot-waterfall.jpg</span>
+            </div>
+            <div class="card__body">
+              <span class="badge u-tomato">Nature</span>
+              <h3>Sajikot Waterfall</h3>
+              <p>A tall, cold curtain of water beyond Havelian. Best in spring and just after the
+                monsoon, when the flow is loud enough to drown conversation.</p>
+            </div>
+          </li>
+
+          <li class="hstrip__card card card--flush u-lilac">
+            <div class="frame frame--4x3">
+              <img src="images/ph-lilac.svg" alt="Snow on the pines along the Pipeline Track at Dunga Gali." width="800" height="600" loading="lazy" decoding="async">
+              <span class="frame__tag">images/pipeline-track.jpg</span>
+            </div>
+            <div class="card__body">
+              <span class="badge u-lilac">Nature</span>
+              <h3>Pipeline Track</h3>
+              <p>The flat forest walk from Dunga Gali towards Ayubia, following an old water
+                pipeline through moss, monkeys and enormous trees.</p>
+            </div>
+          </li>
+
+          <li class="hstrip__card card card--flush u-pine">
+            <div class="frame frame--4x3">
+              <img src="images/ph-ink.svg" alt="Cloud sitting low over the church spire and pines at Nathiagali." width="800" height="600" loading="lazy" decoding="async">
+              <span class="frame__tag">images/nathiagali.jpg</span>
+            </div>
+            <div class="card__body">
+              <span class="badge u-pine">Nature</span>
+              <h3>Nathiagali</h3>
+              <p>The best known of the Galyat hill stations, about an hour away: colonial-era
+                churches, cloud in the trees and snow most winters.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="shell center mt-4">
+      <a class="btn btn--ink" href="places.html">All thirteen places</a>
+    </div>
+  </section>
+
+  <!-- ================= TEASER CARDS: EVERY PAGE ================= -->
+  <section class="section" aria-labelledby="explore-h">
+    <div class="shell">
+      <div class="sec-head">
+        <div class="sec-head__text">
+          <p class="eyebrow">Start anywhere</p>
+          <h2 id="explore-h">Explore the whole city</h2>
+          <p>Seven ways in: the long history, the hills, the food, the people, the practical
+            details, the photographs and a way to say hello.</p>
+        </div>
+      </div>
+
+      <ul class="grid grid--3" data-stagger="70">
+        <li class="card card--link u-mustard" data-reveal="up">
+          <div class="card__body">
+            <p class="teaser__num">01</p>
+            <h3>History</h3>
+            <p>From Gandhara-era valley routes and the Sikh period to a British cantonment in 1853,
+              the Karakoram Highway and the rebuilding after 2005.</p>
+            <a class="card__link card__link--stretch" href="history.html">Read the timeline →</a>
+          </div>
+        </li>
+        <li class="card card--link u-pine" data-reveal="up">
+          <div class="card__body">
+            <p class="teaser__num">02</p>
+            <h3>Places</h3>
+            <p>Thirteen places worth your time, filterable by nature, historic, religious and
+              family, with best seasons and distances.</p>
+            <a class="card__link card__link--stretch" href="places.html">Browse places →</a>
+          </div>
+        </li>
+
+        <li class="card card--link u-tomato" data-reveal="up">
+          <div class="card__body">
+            <p class="teaser__num">03</p>
+            <h3>Food</h3>
+            <p>Chapli kabab, Hazara karahi, trout from the hill streams, pink Kashmiri chai and a
+              one-day eating route through the bazaars.</p>
+            <a class="card__link card__link--stretch" href="food.html">Get hungry →</a>
+          </div>
+        </li>
+        <li class="card card--link u-lilac" data-reveal="up">
+          <div class="card__body">
+            <p class="teaser__num">04</p>
+            <h3>Culture</h3>
+            <p>Hindko, Pashto and Urdu in the same conversation, Eid mornings, handicrafts and the
+              Hazarewal way of feeding a guest.</p>
+            <a class="card__link card__link--stretch" href="culture.html">Meet the city →</a>
+          </div>
+        </li>
+        <li class="card card--link u-sky" data-reveal="up">
+          <div class="card__body">
+            <p class="teaser__num">05</p>
+            <h3>Visit</h3>
+            <p>Two hours from Islamabad on the Hazara Motorway, a month-by-month weather table,
+              what to pack and how to get around.</p>
+            <a class="card__link card__link--stretch" href="visit.html">Plan the trip →</a>
+          </div>
+        </li>
+        <li class="card card--link u-ink" data-reveal="up">
+          <div class="card__body">
+            <p class="teaser__num">06</p>
+            <h3>Gallery</h3>
+            <p>Pines, ridges, bazaar corners and winter mornings, in a tilted masonry wall of
+              photographs with a full-size lightbox.</p>
+            <a class="card__link card__link--stretch" href="gallery.html">See photographs →</a>
+          </div>
+        </li>
+        <li class="card card--link u-mustard" data-reveal="up">
+          <div class="card__body">
+            <p class="teaser__num">07</p>
+            <h3>Contact</h3>
+            <p>Corrections, better photographs, a place I have missed — send it over. The form is a
+              demo, but the invitation is real.</p>
+            <a class="card__link card__link--stretch" href="contact.html">Say hello →</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= WHY VISIT ================= -->
+  <section class="section section--band" id="why" aria-labelledby="why-h">
+    <div class="shell">
+      <div class="grid grid--split">
+        <div data-reveal="left">
+          <p class="eyebrow">Why come at all</p>
+          <h2 id="why-h">A hill city that still works for a living</h2>
+          <div class="prose mt-4">
+            <p>Abbottabad is not a resort. It is a working city of schools, colleges, hospitals and
+              barracks that happens to sit in a bowl of pine-covered hills at around 1,260 metres.
+              That combination is the whole appeal: you get hill-station air and mountain views
+              without giving up bakeries, bookshops, hospitals and reliable food after dark.</p>
+            <p>The geography does most of the work. The valley runs roughly north to south, with
+              Sarban Hill on one side and Shimla Hill on the other, so almost every street ends in
+              a slope and almost every rooftop has a view. Summer afternoons rarely feel punishing
+              the way the plains do, and by October the mornings are cold enough for a shawl.</p>
+            <p>Then there is position. The city sits on the old road north, today the Karakoram
+              Highway, which means a weekend here can stretch into the Galyat hill stations, the
+              Kaghan valley, or a long drive towards Gilgit-Baltistan. Most visitors arrive
+              expecting a stopover and end up staying an extra night for the corn, the chai and
+              the sound of rain on pine needles.</p>
+          </div>
+          <p class="mt-4"><a class="btn btn--tomato" href="visit.html">Practical details</a></p>
+        </div>
+
+        <div data-reveal="right" data-reveal-delay="120">
+          <ul class="checks">
+            <li>Cool, walkable summers — mid-20s to low-30s °C at the hottest</li>
+            <li>Six hill stations and three waterfalls within about an hour</li>
+            <li>Two hours from Islamabad on the Hazara Motorway (E-35)</li>
+            <li>Roasted corn, chapli kabab and pink chai on the same street</li>
+            <li>Snow at Thandiani and Nathiagali most winters</li>
+          </ul>
+          <figure class="frame frame--4x3 mt-4">
+            <img src="images/ph-sky.svg" alt="Winter morning over Abbottabad, with mist between the pines and the ridge behind the city." width="800" height="600" loading="lazy" decoding="async">
+            <span class="frame__tag">images/why-visit.jpg</span>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="cta pattern-stripes" aria-labelledby="cta-h">
+    <div class="shell cta__inner">
+      <h2 id="cta-h" data-reveal="up">Two hours from Islamabad.<br>Bring a jacket.</h2>
+      <p data-reveal="up" data-reveal-delay="80">Spring for blossom, summer for the escape, autumn for
+        clear ridgelines, winter for snow in the Galyat. There is no wrong month, only different jackets.</p>
+      <div class="cluster" data-reveal="up" data-reveal-delay="160">
+        <a class="btn btn--mustard btn--lg" href="visit.html">Plan your visit</a>
+        <a class="btn btn--lg" href="gallery.html">See it first</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__grid">
+      <div>
+        <h2>Abbottabad</h2>
+        <p class="small measure">A hand-built guide to the City of Pines — its history, its hills,
+          its food and its people. Written by someone who grew up here, with photographs waiting to
+          be dropped in.</p>
+        <p class="mt-3"><a class="btn btn--pine" href="visit.html">Plan a visit</a></p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul class="footer__list">
+          <li><a href="history.html">History</a></li>
+          <li><a href="places.html">Places to visit</a></li>
+          <li><a href="food.html">Food &amp; bazaars</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="visit.html">Getting here</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>The city</h3>
+        <ul class="footer__list">
+          <li>Hazara Division, Khyber Pakhtunkhwa</li>
+          <li>≈120 km north of Islamabad</li>
+          <li>≈1,260 m above sea level</li>
+        </ul>
+        <div class="social mt-3 u-sky" aria-label="Social links (demo)">
+          <a href="contact.html" aria-label="Instagram (demo link)">IG</a>
+          <a href="contact.html" aria-label="Facebook (demo link)">FB</a>
+          <a href="contact.html" aria-label="YouTube (demo link)">YT</a>
+          <a href="contact.html" aria-label="Email us">Mail</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="small">© <span data-year>2026</span> Abbottabad — The City of Pines. Demo project;
+        all images are placeholders until real photographs are added.</p>
+      <p class="small">Plain HTML, CSS and JavaScript. No frameworks.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="totop icon-btn icon-btn--lg u-mustard" id="toTop" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5M5 12l7-7 7 7"/></svg>
+</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
+

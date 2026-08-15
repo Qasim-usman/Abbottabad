@@ -1,0 +1,11 @@
+# Editor and OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+
+# Local tooling — not part of the site
+.claude/
+.vercel/
+node_modules/
+*.tmp.js

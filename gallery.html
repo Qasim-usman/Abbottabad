@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abbottabad Photo Gallery — Pines, Ridges, Bazaars & Snow</title>
+<meta name="description" content="A photo wall of Abbottabad and the Hazara hills: pine ridges, Shimla Hill sunsets, bazaar corners, Thandiani snow and the road north — with a full-size lightbox.">
+<link rel="canonical" href="https://your-username.github.io/abbottabad/gallery.html">
+<meta name="theme-color" content="#FFFDF7">
+<meta name="color-scheme" content="light dark">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Abbottabad — The City of Pines">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Abbottabad in Photographs">
+<meta property="og:description" content="A photo wall of Abbottabad and the Hazara hills: pine ridges, Shimla Hill sunsets, bazaar corners, Thandiani snow and the road north — with a full-size lightbox.">
+<meta property="og:url" content="https://your-username.github.io/abbottabad/gallery.html">
+<meta property="og:image" content="https://your-username.github.io/abbottabad/images/og-cover.jpg">
+<meta property="og:image:alt" content="Pine-covered hills above Abbottabad at golden hour.">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abbottabad in Photographs">
+<meta name="twitter:description" content="A photo wall of Abbottabad and the Hazara hills: pine ridges, Shimla Hill sunsets, bazaar corners, Thandiani snow and the road north — with a full-size lightbox.">
+<meta name="twitter:image" content="https://your-username.github.io/abbottabad/images/og-cover.jpg">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Runs before first paint: flags JS and applies the saved / system theme
+     so the page never flashes the wrong colours. -->
+<script>
+(function () {
+  var h = document.documentElement;
+  h.classList.add('js');
+  var t = null;
+  try { t = localStorage.getItem('ab-theme'); } catch (e) {}
+  if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  h.setAttribute('data-theme', t);
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "Abbottabad photo gallery",
+  "description": "Photographs of Abbottabad, the Galyat hill stations and the Hazara valley.",
+  "url": "https://your-username.github.io/abbottabad/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Abbottabad",
+    "addressRegion": "Khyber Pakhtunkhwa",
+    "addressCountry": "PK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.1463,
+    "longitude": 73.2117
+  }
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+<header class="nav">
+  <div class="nav__inner shell">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">AB</span>
+      <span class="brand__txt">Abbottabad<small>City of Pines</small></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Main">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="history.html">History</a></li>
+        <li><a class="nav__link" href="places.html">Places</a></li>
+        <li><a class="nav__link" href="food.html">Food</a></li>
+        <li><a class="nav__link" href="culture.html">Culture</a></li>
+        <li><a class="nav__link" href="visit.html">Visit</a></li>
+        <li><a class="nav__link" href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__tools">
+      <button class="icon-btn" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13.2A9 9 0 1 1 10.8 3a7 7 0 0 0 10.2 10.2Z"/></svg>
+      </button>
+      <button class="icon-btn nav__burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<aside class="drawer" id="drawer" aria-label="Site menu" hidden>
+  <div class="drawer__head">
+    <span class="drawer__title">Menu</span>
+    <button class="icon-btn" id="drawerClose" type="button" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+    </button>
+  </div>
+  <ul class="drawer__list" id="drawerList"></ul>
+  <p class="drawer__foot small">Hazara Division · Khyber Pakhtunkhwa · Pakistan</p>
+</aside>
+
+<main id="main">
+
+  <!-- ================= PAGE HEADER ================= -->
+  <section class="phead pattern-dots u-ink">
+    <div class="shell">
+      <nav aria-label="Breadcrumb">
+        <ol class="crumbs">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Gallery</li>
+        </ol>
+      </nav>
+      <h1 class="phead__title" data-reveal="up">Twelve frames of <mark>the pine city</mark></h1>
+      <p class="phead__lede" data-reveal="up" data-reveal-delay="80">
+        Ridges, bazaar corners, snow on the Thandiani road and the food that keeps everyone going.
+        Every frame below is a placeholder block until real photographs are dropped in — the file it
+        is waiting for is printed on the frame. Click any image to open it larger.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= MASONRY ================= -->
+  <section class="section" aria-labelledby="wall-h">
+    <div class="shell">
+      <div class="sec-head">
+        <div class="sec-head__text">
+          <p class="eyebrow">The photo wall</p>
+          <h2 id="wall-h">Abbottabad, roughly in order of altitude</h2>
+          <p>Use the arrow keys to move between images once one is open, Escape to close, or swipe on
+            a phone.</p>
+        </div>
+      </div>
+
+      <div class="masonry" data-stagger>
+        <div class="masonry__item" data-reveal="up">
+          <a class="tile" href="images/ph-pine.svg" data-lb data-lb-caption="Deodar pines above the city, an hour before sunset.">
+            <div class="frame frame--4x3">
+              <img src="images/ph-pine.svg" alt="Deodar pines above the city, an hour before sunset." width="800" height="600" loading="lazy" decoding="async">
+              <span class="frame__tag">images/g-pines-golden-hour.jpg</span>
+            </div>
+            <span class="tile__cap">Pines, golden hour</span>
+          </a>
+        </div>
+
+        <div class="masonry__item" data-reveal="up">
+          <a class="tile" href="images/ph-mustard.svg" data-lb data-lb-caption="The valley from the top of Shimla Hill as the lights come on.">
+            <div class="frame frame--3x4">
+              <img src="images/ph-mustard.svg" alt="The valley from the top of Shimla Hill as the lights come on." width="600" height="800" loading="lazy" decoding="async">
+              <span class="frame__tag">images/g-shimla-sunset.jpg</span>
+            </div>
+            <span class="tile__cap">Shimla Hill sunset</span>
+          </a>
+        </div>
+
+        <div class="masonry__item" data-reveal="up">
+          <a class="tile" href="images/ph-sky.svg" data-lb data-lb-caption="Snow banked along the forest road up to Thandiani.">
+            <div class="frame frame--4x3">
+              <img src="images/ph-sky.svg" alt="Snow banked along the forest road up to Thandiani." width="800" height="600" loading="lazy" decoding="async">
+              <span class="frame__tag">images/g-thandiani-snow.jpg</span>
+            </div>
+            <span class="tile__cap">Thandiani in snow</span>
+          </a>
+        </div>
+
+        <div class="masonry__item" data-reveal="up">
+          <a class="tile" href="images/ph-tomato.svg" data-lb data-lb-caption="Sacks of spice and dried fruit open at the front of a bazaar shop.">
+            <div class="frame frame--1x1">
+              <img src="images/ph-tomato.svg" alt="Sacks of spice and dried fruit open at the front of a bazaar shop." width="700" height="700" loading="lazy" decoding="async">
+              <span class="frame__tag">images/g-kachehri-bazaar.jpg</span>
+            </div>
+            <span class="tile__cap">Kachehri Bazaar</span>
+          </a>
+        </div>
+
+        <div class="masonry__item" data-reveal="up">
+          <a class="tile" href="images/ph-lilac.svg" data-lb data-lb-caption="Cold spring water running through the courtyard at Ilyasi Masjid.">
+            <div class="frame frame--4x3">
+              <img src="images/ph-lilac.svg" alt="Cold spring water running through the courtyard at Ilyasi Masjid." width="800" height="600" loading="lazy" decoding="async">
+              <span class="frame__tag">images/g-ilyasi-spring.jpg</span>
+            </div>
+            <span class="tile__cap">Spring water, Ilyasi</span>
+          </a>
+        </div>
+
+        <div class="masonry__item" data-reveal="up">
+          <a class="tile" href="images/ph-ink.svg" data-lb data-lb-caption="The Karakoram Highway curving north out of the Hazara valley.">
+            <div class="frame frame--16x9">
+              <img src="images/ph-ink.svg" alt="The Karakoram Highway curving north out of the Hazara valley." width="960" height="540" loading="lazy" decoding="async">
+              <span class="frame__tag">images/g-road-north.jpg</span>
+            </div>
+            <span class="tile__cap">The road north</span>
+          </a>
+        </div>
+        <div class="masonry__item" data-reveal="up">
+          <a class="tile" href="images/ph-sky.svg" data-lb data-lb-caption="Sajikot Waterfall in full spring flow, spray filling the gorge.">
+            <div class="frame frame--3x4">
+              <img src="images/ph-sky.svg" alt="Sajikot Waterfall in full spring flow, spray filling the gorge." width="600" height="800" loading="lazy" decoding="async">
+              <span class="frame__tag">images/g-sajikot-flood.jpg</span>
+            </div>
+            <span class="tile__cap">Sajikot in spring</span>
+          </a>
+        </div>
+
+        <div class="masonry__item" data-reveal="up">
+          <a class="tile" href="images/ph-pine.svg" data-lb data-lb-caption="Ferns and moss along the level forest path of the Pipeline Track.">
+            <div class="frame frame--4x3">
+              <img src="images/ph-pine.svg" alt="Ferns and moss along the level forest path of the Pipeline Track." width="800" height="600" loading="lazy" decoding="async">
+              <span class="frame__tag">images/g-pipeline-ferns.jpg</span>
+            </div>
+            <span class="tile__cap">Pipeline Track</span>
+          </a>
+        </div>
+
+        <div class="masonry__item" data-reveal="up">
+          <a class="tile" href="images/ph-tomato.svg" data-lb data-lb-caption="Chapli kababs crisping at the edges on a wide steel griddle.">
+            <div class="frame frame--1x1">
+              <img src="images/ph-tomato.svg" alt="Chapli kababs crisping at the edges on a wide steel griddle." width="700" height="700" loading="lazy" decoding="async">
+              <span class="frame__tag">images/g-chapli-griddle.jpg</span>
+            </div>
+            <span class="tile__cap">Chapli on the griddle</span>
+          </a>
+        </div>
+
+        <div class="masonry__item" data-reveal="up">
+          <a class="tile" href="images/ph-ink.svg" data-lb data-lb-caption="St Luke's Church behind its wall of old cantonment trees.">
+            <div class="frame frame--4x3">
+              <img src="images/ph-ink.svg" alt="St Luke's Church behind its wall of old cantonment trees." width="800" height="600" loading="lazy" decoding="async">
+              <span class="frame__tag">images/g-st-lukes.jpg</span>
+            </div>
+            <span class="tile__cap">Cantonment stone</span>
+          </a>
+        </div>
+
+        <div class="masonry__item" data-reveal="up">
+          <a class="tile" href="images/ph-lilac.svg" data-lb data-lb-caption="Cloud sitting in the treetops above the bazaar at Nathiagali.">
+            <div class="frame frame--3x4">
+              <img src="images/ph-lilac.svg" alt="Cloud sitting in the treetops above the bazaar at Nathiagali." width="600" height="800" loading="lazy" decoding="async">
+              <span class="frame__tag">images/g-nathiagali-cloud.jpg</span>
+            </div>
+            <span class="tile__cap">Cloud at Nathiagali</span>
+          </a>
+        </div>
+
+        <div class="masonry__item" data-reveal="up">
+          <a class="tile" href="images/ph-mustard.svg" data-lb data-lb-caption="Corn blackening over coals at a stall on Shimla Hill at dusk.">
+            <div class="frame frame--4x3">
+              <img src="images/ph-mustard.svg" alt="Corn blackening over coals at a stall on Shimla Hill at dusk." width="800" height="600" loading="lazy" decoding="async">
+              <span class="frame__tag">images/g-corn-coals.jpg</span>
+            </div>
+            <span class="tile__cap">Corn on the coals</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CREDITS NOTE ================= -->
+  <section class="section section--tight section--band" aria-labelledby="cred-h">
+    <div class="shell shell--narrow">
+      <h2 id="cred-h" data-reveal="up">About these images</h2>
+      <p class="measure" data-reveal="up">Every frame on this page is a flat placeholder generated in
+        CSS and SVG, not a photograph, and nothing here is hotlinked from anywhere else. The filename
+        printed on each frame is what the site expects: drop a real photograph in the
+        <code>images/</code> folder under that name and it will appear with no other changes. Keep the
+        aspect ratio roughly as shown so the layout does not shift, and keep files under about 300 KB
+        so the page stays fast.</p>
+      <p class="measure" data-reveal="up" data-reveal-delay="80">If you are using other people's
+        photographs, use your own, ones you have permission for, or images released under a licence
+        that allows it — and credit the photographer in the caption. There is a full list of expected
+        filenames in <code>images/README.md</code>.</p>
+    </div>
+  </section>
+
+  <!-- ================= LIGHTBOX (JS enhancement; links work without it) ======= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <div class="lightbox__bar">
+      <p class="lightbox__counter" id="lbCounter" aria-live="polite">1 / 12</p>
+      <button class="icon-btn" type="button" id="lbClose" aria-label="Close image viewer">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+    </div>
+    <div class="lightbox__stage">
+      <figure class="lightbox__figure">
+        <img id="lbImage" src="images/ph-pine.svg" alt="" width="1200" height="900" decoding="async">
+        <figcaption class="lightbox__cap" id="lbCaption"></figcaption>
+      </figure>
+    </div>
+    <div class="lightbox__nav">
+      <button class="icon-btn icon-btn--lg" type="button" id="lbPrev" aria-label="Previous image">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <button class="icon-btn icon-btn--lg" type="button" id="lbNext" aria-label="Next image">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= CTA ================= -->
+  <section class="cta pattern-stripes" aria-labelledby="gal-cta-h">
+    <div class="shell cta__inner">
+      <h2 id="gal-cta-h" data-reveal="up">Got a better photograph?</h2>
+      <p data-reveal="up" data-reveal-delay="80">Send it in, or tell us what this guide has missed.</p>
+      <div class="cluster" data-reveal="up" data-reveal-delay="160">
+        <a class="btn btn--mustard btn--lg" href="contact.html">Get in touch</a>
+        <a class="btn btn--lg" href="places.html">Places to visit</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__grid">
+      <div>
+        <h2>Abbottabad</h2>
+        <p class="small measure">A hand-built guide to the City of Pines — its history, its hills,
+          its food and its people. Written by someone who grew up here, with photographs waiting to
+          be dropped in.</p>
+        <p class="mt-3"><a class="btn btn--pine" href="visit.html">Plan a visit</a></p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul class="footer__list">
+          <li><a href="history.html">History</a></li>
+          <li><a href="places.html">Places to visit</a></li>
+          <li><a href="food.html">Food &amp; bazaars</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="visit.html">Getting here</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>The city</h3>
+        <ul class="footer__list">
+          <li>Hazara Division, Khyber Pakhtunkhwa</li>
+          <li>≈120 km north of Islamabad</li>
+          <li>≈1,260 m above sea level</li>
+        </ul>
+        <div class="social mt-3 u-sky" aria-label="Social links (demo)">
+          <a href="contact.html" aria-label="Instagram (demo link)">IG</a>
+          <a href="contact.html" aria-label="Facebook (demo link)">FB</a>
+          <a href="contact.html" aria-label="YouTube (demo link)">YT</a>
+          <a href="contact.html" aria-label="Email us">Mail</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="small">© <span data-year>2026</span> Abbottabad — The City of Pines. Demo project;
+        all images are placeholders until real photographs are added.</p>
+      <p class="small">Plain HTML, CSS and JavaScript. No frameworks.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="totop icon-btn icon-btn--lg u-mustard" id="toTop" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5M5 12l7-7 7 7"/></svg>
+</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
+

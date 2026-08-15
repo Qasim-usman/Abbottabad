@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Abbottabad, The City of Pines</title>
+<meta name="description" content="Send a correction, a better photograph or a place this guide has missed. Demo contact form, static map placeholder and social links for the Abbottabad City of Pines project.">
+<link rel="canonical" href="https://your-username.github.io/abbottabad/contact.html">
+<meta name="theme-color" content="#FFFDF7">
+<meta name="color-scheme" content="light dark">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Abbottabad — The City of Pines">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Contact — Abbottabad, The City of Pines">
+<meta property="og:description" content="Send a correction, a better photograph or a place this guide has missed. Demo contact form, static map placeholder and social links for the Abbottabad City of Pines project.">
+<meta property="og:url" content="https://your-username.github.io/abbottabad/contact.html">
+<meta property="og:image" content="https://your-username.github.io/abbottabad/images/og-cover.jpg">
+<meta property="og:image:alt" content="Pine-covered hills above Abbottabad at golden hour.">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact — Abbottabad, The City of Pines">
+<meta name="twitter:description" content="Send a correction, a better photograph or a place this guide has missed. Demo contact form, static map placeholder and social links for the Abbottabad City of Pines project.">
+<meta name="twitter:image" content="https://your-username.github.io/abbottabad/images/og-cover.jpg">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Runs before first paint: flags JS and applies the saved / system theme
+     so the page never flashes the wrong colours. -->
+<script>
+(function () {
+  var h = document.documentElement;
+  h.classList.add('js');
+  var t = null;
+  try { t = localStorage.getItem('ab-theme'); } catch (e) {}
+  if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  h.setAttribute('data-theme', t);
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "Contact — Abbottabad City of Pines",
+  "description": "Contact page for the Abbottabad City of Pines guide.",
+  "url": "https://your-username.github.io/abbottabad/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Abbottabad",
+    "addressRegion": "Khyber Pakhtunkhwa",
+    "addressCountry": "PK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.1463,
+    "longitude": 73.2117
+  }
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+<header class="nav">
+  <div class="nav__inner shell">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">AB</span>
+      <span class="brand__txt">Abbottabad<small>City of Pines</small></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Main">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="history.html">History</a></li>
+        <li><a class="nav__link" href="places.html">Places</a></li>
+        <li><a class="nav__link" href="food.html">Food</a></li>
+        <li><a class="nav__link" href="culture.html">Culture</a></li>
+        <li><a class="nav__link" href="visit.html">Visit</a></li>
+        <li><a class="nav__link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav__link" href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__tools">
+      <button class="icon-btn" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13.2A9 9 0 1 1 10.8 3a7 7 0 0 0 10.2 10.2Z"/></svg>
+      </button>
+      <button class="icon-btn nav__burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<aside class="drawer" id="drawer" aria-label="Site menu" hidden>
+  <div class="drawer__head">
+    <span class="drawer__title">Menu</span>
+    <button class="icon-btn" id="drawerClose" type="button" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+    </button>
+  </div>
+  <ul class="drawer__list" id="drawerList"></ul>
+  <p class="drawer__foot small">Hazara Division · Khyber Pakhtunkhwa · Pakistan</p>
+</aside>
+
+<main id="main">
+
+  <!-- ================= PAGE HEADER ================= -->
+  <section class="phead pattern-stripes u-tomato">
+    <div class="shell">
+      <nav aria-label="Breadcrumb">
+        <ol class="crumbs">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Contact</li>
+        </ol>
+      </nav>
+      <h1 class="phead__title" data-reveal="up">Tell us what <mark>we got wrong</mark></h1>
+      <p class="phead__lede" data-reveal="up" data-reveal-delay="80">
+        A correction, a better photograph, a place this guide has missed, or a distance that is off by
+        ten kilometres — all of it is welcome. This is a small independent guide to one city, and it
+        gets better every time somebody who lives there writes in.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= FORM + ASIDE ================= -->
+  <section class="section" aria-labelledby="form-h">
+    <div class="shell">
+      <div class="grid grid--split">
+        <div data-reveal="left">
+          <div class="sec-head">
+            <div class="sec-head__text">
+              <p class="eyebrow">Say hello</p>
+              <h2 id="form-h">Send a message</h2>
+            </div>
+          </div>
+
+          <p class="notice mb-4">Heads up: this is a demo form with no backend. Nothing is sent, saved
+            or emailed anywhere — it validates your input and then tells you so. Wiring it to a real
+            service takes about five minutes; see the README.</p>
+
+          <form class="form" id="contactForm" action="contact.html" method="get">
+            <div class="field">
+              <label class="field__label" for="cName">Your name</label>
+              <input class="input" type="text" id="cName" name="name" data-validate data-label="Your name"
+                     required minlength="2" autocomplete="name" aria-describedby="cNameErr">
+              <p class="error-block" id="cNameErr" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="cEmail">Email address</label>
+              <p class="field__hint" id="cEmailHint">Only used to reply. Never shared.</p>
+              <input class="input" type="email" id="cEmail" name="email" data-validate data-label="Your email"
+                     required autocomplete="email" aria-describedby="cEmailHint cEmailErr">
+              <p class="error-block" id="cEmailErr" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="cTopic">What is this about?</label>
+              <select class="input" id="cTopic" name="topic" data-validate data-label="A topic"
+                      required aria-describedby="cTopicErr">
+                <option value="">Choose one…</option>
+                <option value="correction">A correction to the facts</option>
+                <option value="photo">Offering a photograph</option>
+                <option value="place">A place you have missed</option>
+                <option value="food">Food and restaurants</option>
+                <option value="other">Something else</option>
+              </select>
+              <p class="error-block" id="cTopicErr" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="cMsg">Message</label>
+              <p class="field__hint" id="cMsgHint">At least twenty characters — enough to be useful.</p>
+              <textarea class="input" id="cMsg" name="message" data-validate data-label="Your message"
+                        required minlength="20" rows="6" aria-describedby="cMsgHint cMsgErr"></textarea>
+              <p class="error-block" id="cMsgErr" role="alert"></p>
+            </div>
+
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+
+            <div class="cluster">
+              <button class="btn btn--tomato btn--lg" type="submit" id="contactSubmit">
+                <span class="btn__spinner" aria-hidden="true"></span>
+                Send message
+              </button>
+              <button class="btn btn--lg" type="reset">Clear the form</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="stack" data-reveal="right" data-reveal-delay="120">
+          <div class="map-ph">
+            <div>
+              <p class="micro">Static map placeholder</p>
+              <p class="mt-2"><strong>Abbottabad, Khyber Pakhtunkhwa, Pakistan</strong></p>
+              <p class="small muted">Approximately 34.15° N, 73.21° E · about 1,260 m</p>
+              <p class="small muted mt-2">Drop a screenshot in as
+                <code>images/map-abbottabad.jpg</code>, or embed a map provider here if you are happy
+                with the third-party requests.</p>
+            </div>
+          </div>
+
+          <dl class="facts">
+            <div class="fact">
+              <dt>Email</dt>
+              <dd>hello@example.com</dd>
+            </div>
+            <div class="fact">
+              <dt>Response time</dt>
+              <dd>A few days, honestly</dd>
+            </div>
+            <div class="fact">
+              <dt>Languages</dt>
+              <dd>English, Urdu, Hindko</dd>
+            </div>
+          </dl>
+
+          <div>
+            <h2 class="mb-4">Elsewhere</h2>
+            <div class="social u-lilac" aria-label="Social links (placeholders)">
+              <a href="#" data-no-wipe aria-label="Instagram (placeholder link)">IG</a>
+              <a href="#" data-no-wipe aria-label="Facebook (placeholder link)">FB</a>
+              <a href="#" data-no-wipe aria-label="YouTube (placeholder link)">YT</a>
+              <a href="#" data-no-wipe aria-label="GitHub (placeholder link)">GH</a>
+            </div>
+            <p class="small muted mt-2">Placeholder links — swap the <code>href</code> values for
+              your own profiles, or delete the ones you do not use.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHAT HELPS ================= -->
+  <section class="section section--band" aria-labelledby="helps-h">
+    <div class="shell">
+      <div class="sec-head">
+        <div class="sec-head__text">
+          <p class="eyebrow">Make it count</p>
+          <h2 id="helps-h">What makes a useful message</h2>
+        </div>
+      </div>
+      <div class="grid grid--3" data-stagger>
+        <article class="card u-pine" data-reveal="up">
+          <div class="card__body">
+            <span class="badge u-pine">Corrections</span>
+            <h3>Be specific</h3>
+            <p>Tell us the page, the sentence and what it should say instead. If you have a source —
+              even "I have lived on that road for thirty years" — say so.</p>
+          </div>
+        </article>
+        <article class="card u-sky" data-reveal="up">
+          <div class="card__body">
+            <span class="badge u-sky">Photographs</span>
+            <h3>Own what you send</h3>
+            <p>Only send photographs you took yourself or clearly have the right to share, and tell us
+              how you would like to be credited. Nothing here is ever hotlinked.</p>
+          </div>
+        </article>
+        <article class="card u-mustard" data-reveal="up">
+          <div class="card__body">
+            <span class="badge u-mustard">Additions</span>
+            <h3>Say why it matters</h3>
+            <p>A missing place is more persuasive with a reason attached: what it is, when to go, and
+              what makes it worth an hour of somebody's day.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="cta pattern-stripes" aria-labelledby="con-cta-h">
+    <div class="shell cta__inner">
+      <h2 id="con-cta-h" data-reveal="up">While you are here.</h2>
+      <p data-reveal="up" data-reveal-delay="80">Start with the history, or skip to the hills and the
+        food.</p>
+      <div class="cluster" data-reveal="up" data-reveal-delay="160">
+        <a class="btn btn--mustard btn--lg" href="history.html">The history</a>
+        <a class="btn btn--lg" href="places.html">Places to visit</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__grid">
+      <div>
+        <h2>Abbottabad</h2>
+        <p class="small measure">A hand-built guide to the City of Pines — its history, its hills,
+          its food and its people. Written by someone who grew up here, with photographs waiting to
+          be dropped in.</p>
+        <p class="mt-3"><a class="btn btn--pine" href="visit.html">Plan a visit</a></p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul class="footer__list">
+          <li><a href="history.html">History</a></li>
+          <li><a href="places.html">Places to visit</a></li>
+          <li><a href="food.html">Food &amp; bazaars</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="visit.html">Getting here</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>The city</h3>
+        <ul class="footer__list">
+          <li>Hazara Division, Khyber Pakhtunkhwa</li>
+          <li>≈120 km north of Islamabad</li>
+          <li>≈1,260 m above sea level</li>
+        </ul>
+        <div class="social mt-3 u-sky" aria-label="Social links (demo)">
+          <a href="contact.html" aria-label="Instagram (demo link)">IG</a>
+          <a href="contact.html" aria-label="Facebook (demo link)">FB</a>
+          <a href="contact.html" aria-label="YouTube (demo link)">YT</a>
+          <a href="contact.html" aria-label="Email us">Mail</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="small">© <span data-year>2026</span> Abbottabad — The City of Pines. Demo project;
+        all images are placeholders until real photographs are added.</p>
+      <p class="small">Plain HTML, CSS and JavaScript. No frameworks.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="totop icon-btn icon-btn--lg u-mustard" id="toTop" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5M5 12l7-7 7 7"/></svg>
+</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
+
