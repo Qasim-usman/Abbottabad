@@ -23,6 +23,14 @@ flat SVG placeholders.
 | `nathiagali.jpg` | places.html | 4:3 |
 | `pipeline-track.jpg` | places.html | 4:3 |
 | `ayubia.jpg` | places.html | 4:3 |
+| `dumba-karahi.jpg` | food.html | 4:3 |
+| `doodh-patti.jpg` | food.html | 4:3 |
+| `trout.jpg` | food.html | 4:3 |
+| `bazaar-talk.jpg` | culture.html | 4:3 |
+| `hospitality-tea.jpg` | culture.html | 4:3 |
+| `festival-lights.jpg` | culture.html | 4:3 |
+| `handicrafts.jpg` | culture.html | 4:3 |
+| `college-road.jpg` | culture.html | 4:3 |
 
 Full-resolution originals live in `originals/`, which is git-ignored — they are 3–5 MB
 each and must never ship. Re-crop from there rather than from the shipped JPEGs.
@@ -49,6 +57,13 @@ Two photographs from that batch were **not** used: a stone village under snow-ca
 limestone peaks and a river valley of alpine pasture and chalets. Both are clearly
 European, not the Hazara valley, and captioning them as Abbottabad would make the page
 factually wrong.
+
+A ninth file, a "HAZAREWAL — Identity. Culture. Pride." infographic, was also left out.
+It is a designed graphic rather than a photograph: paragraphs of body text and four
+labelled panels. Scaled into an 800×600 card that text is illegible, screen readers
+cannot reach it, and Google cannot index it. The claims it makes — Hindko as the
+everyday language, the long-running demand for a separate Hazara province — already
+appear as real HTML text on `culture.html`, where they are readable and indexable.
 
 ### Seven slots still open, and why some links can't fill them
 
