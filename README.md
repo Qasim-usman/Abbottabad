@@ -105,11 +105,12 @@ Two things are duplicated across pages, because there is no build step:
   link, add it in all eight — the mobile drawer builds itself from the navbar at
   runtime, so it updates automatically.
 
-Before publishing, replace every occurrence of `https://your-username.github.io/abbottabad/`
-with your real URL:
+The absolute URLs — canonical, Open Graph, Twitter, JSON-LD, `robots.txt` and
+`sitemap.xml` — all point at the live site, `https://abbottabad.vercel.app/`. If the
+domain ever changes, rewrite them in one pass:
 
 ```bash
-grep -rl "your-username.github.io/abbottabad" . | xargs sed -i 's|https://your-username.github.io/abbottabad/|https://YOUR-URL/|g'
+grep -rl "abbottabad.vercel.app" . | xargs sed -i 's|https://abbottabad.vercel.app/|https://YOUR-URL/|g'
 ```
 
 ## Change the palette
@@ -209,20 +210,21 @@ Content can never get stuck invisible: the observer reveals on intersection, on 
 resize/scroll re-check, and `boot()` force-reveals anything still hidden after 3 s.
 With JavaScript off, `:root:not(.js)` rules show everything from the start.
 
-## Deploy to Vercel
+## Deploy
 
-Nothing to build, so Vercel just serves the folder. Two routes:
+The site is live on Vercel at **<https://abbottabad.vercel.app/>**, served from
+<https://github.com/Qasim-usman/Abbottabad>. There is no build step, so every push to
+`main` redeploys the folder as-is — nothing to configure and nothing to compile.
 
-**From the dashboard**
+### Vercel, from scratch
 
-1. Push the folder to GitHub (steps 2–3 of the GitHub Pages section below).
+1. Push the folder to GitHub.
 2. On <https://vercel.com/new>, import the repository.
 3. Framework Preset **Other**, Build Command **empty**, Output Directory **empty**
    (leave it as the repository root). Do not let it guess a build step.
-4. *Deploy*. You get `https://PROJECT.vercel.app/` in under a minute, and every later
-   `git push` redeploys automatically.
+4. *Deploy*. You get `https://PROJECT.vercel.app/` in under a minute.
 
-**From the CLI**, in this folder:
+Or from the CLI, in this folder:
 
 ```bash
 npx vercel --prod
@@ -230,40 +232,20 @@ npx vercel --prod
 
 Answer *no* to "override settings" — the defaults publish the directory as-is.
 
-Then set your real URL. The eight `<head>` blocks, `robots.txt` and `sitemap.xml` still
-carry the placeholder `https://your-username.github.io/abbottabad/`; point them at your
-production domain (see "Change the text" above), e.g.:
+Whichever route, point the absolute URLs at the domain you want indexed (see "Change
+the text" above) — your custom domain if you add one under *Project* → *Settings* →
+*Domains*, never a per-deployment preview URL. Vercel serves from the domain root, so
+all the relative links keep working untouched.
 
-```bash
-grep -rl "your-username.github.io/abbottabad" . | xargs sed -i 's|https://your-username.github.io/abbottabad/|https://PROJECT.vercel.app/|g'
-```
+### GitHub Pages, as an alternative
 
-Use the domain you actually want indexed — your custom domain if you add one under
-*Project* → *Settings* → *Domains*, not the per-deployment preview URL. Vercel serves
-from the domain root, so no subfolder handling is needed and all the relative links
-keep working.
+The same folder hosts on Pages with no changes:
 
-## Deploy to GitHub Pages
-
-There is no build step, so publishing is just pushing the folder.
-
-1. **Set your real URL first.** Eight `<head>` blocks, `robots.txt` and `sitemap.xml`
-   all contain the placeholder `https://your-username.github.io/abbottabad/`. Replace
-   it (see "Change the text" above) with `https://YOUR-USER.github.io/REPO/`.
-2. **Create the repository** on GitHub — public, no README, no `.gitignore`.
-3. **Push this folder:**
-
-```bash
-git init && git add . && git commit -m "Abbottabad site" && git branch -M main
-```
-
-```bash
-git remote add origin https://github.com/YOUR-USER/REPO.git && git push -u origin main
-```
-
-4. **Enable Pages:** repository → *Settings* → *Pages* → Source **Deploy from a
+1. **Set the URL first.** Rewrite the absolute URLs (see "Change the text") to
+   `https://YOUR-USER.github.io/REPO/`.
+2. **Enable Pages:** repository → *Settings* → *Pages* → Source **Deploy from a
    branch** → Branch `main`, folder `/ (root)` → *Save*.
-5. Wait for the green check in the *Actions* tab, then open
+3. Wait for the green check in the *Actions* tab, then open
    `https://YOUR-USER.github.io/REPO/`. First deploy usually takes under a minute.
 
 Notes:

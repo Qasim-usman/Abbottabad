@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-username.github.io/abbottabad/sitemap.xml
+Sitemap: https://abbottabad.vercel.app/sitemap.xml
